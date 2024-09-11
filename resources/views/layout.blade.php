@@ -21,7 +21,7 @@
                       <div class="collapse navbar-collapse" id="navbarNav">
                         <div class="navbar-nav">
                             {{-- navebar --}}
-                            <a class="nav-link active" aria-current="page" href="#">Category</a>
+                            <a class="nav-link active" aria-current="page" href=" {{ url ('/category') }} ">Category</a>
                             <a class="nav-link active" aria-current="page" href="#">Brand</a>
                             <a class="nav-link active" aria-current="page" href="#">Product</a>
                             <a class="nav-link active" aria-current="page" href="#">Sales</a>
@@ -29,10 +29,11 @@
                       </div>
                     </div>
                   </nav>
-
             </div>
+                @yield('content')
         </div>
-    </div>
 
+    </div>
+                @include('libraries.scripts')
 </body>
 </html>
